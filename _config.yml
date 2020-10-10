@@ -1,0 +1,4 @@
+sass:
+    sass_dir: assets/bootstrap/scss
+
+baseurl: /portfolio
