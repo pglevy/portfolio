@@ -3,8 +3,8 @@
   {% for feature in home_features %}
   <div class="col-md-6 mb-3">
     <div class="card mb-3">
-      <a href="{{ feature.link }}"><img src="assets/img/moneymovesforteens.com_(iPad Pro).png" class="card-img-top" alt="Screenshot of '{{ feature.title }}' website"></a>
-      <div class="card-body">
+      <a href="{{ feature.link }}"><img src="assets/img/{{ feature.image }}" class="card-img-top" alt="Screenshot of '{{ feature.title }}' website"></a>
+      <div class="card-body border-top">
         <h5 class="card-title"><a href="{{ feature.link }}">{{ feature.title }}</a></h5>
         <p class="card-text">{{ feature.description }}</p>
       </div>
