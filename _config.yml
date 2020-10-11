@@ -5,3 +5,4 @@ baseurl: /portfolio
 
 collections:
   - features
+  - others

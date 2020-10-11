@@ -1,0 +1,11 @@
+{% assign work_others = site.others | where: "title", "home" %}
+<div class="row p-4">
+  <div class="col-sm p-5">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">At 14, my daughter already grasps the time value of money. And she&#39;s sharing it in a podcast! (<a href="https://twitter.com/moneymoves14s?ref_src=twsrc%5Etfw">@moneymoves14s</a>) At 14, I was probably dropping firecrackers in a sewer. I feel like that&#39;s generational progress.</p>&mdash; Philip Levy (@pglevy) <a href="https://twitter.com/pglevy/status/1311697386012467200?ref_src=twsrc%5Etfw">October 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <div class="col-sm p-5">
+    {% for item in work_others %}
+      {{ item.content | markdownify }}
+    {% endfor %}
+  </div>
+</div>
