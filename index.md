@@ -3,17 +3,10 @@ title: Home
 layout: default
 ---
 
-# Philip's Portfolio
-
-## Navigation
-* Work
-* About me
-* Links and downloads
-
 # Hi! I'm Philip. Welcome to my portfolio.
 My passion is the practice of design, for everything from processes to products. I love engaging with people to dream up and make things that create mutual value and benefits.
 
-## Work
+## My Work
 Here are some examples of my recent work. It's split between things I do with my colleagues at work and things I do with my family at home, where I play different but complementary roles.
 
 ### _@Work_: Employee Experience Designer
