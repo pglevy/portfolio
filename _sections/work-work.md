@@ -5,13 +5,13 @@ bg-color: secondary
 ---
 
 ## My Work
-Here are some examples of my recent work. It's split between things I do with my colleagues at work and things I do with my family at home, where I play different but complementary roles.
+Here are some examples of my recent work. It’s split between things I do with my colleagues at work and things I do with my family at home, where I play different but complementary roles.
 {: .lead}
 
 ### _@Work_: Employee Experience Designer
 {: .mt-4}
 
-I lead a team of seven experience designers and researchers at [Bixal](https://www.bixal.com/) where we're using human-centered design and agile mindsets and methods to improve the customer experience of the federal government.
+I lead a team of seven experience designers and researchers at [Bixal](https://www.bixal.com/) where we’re using human-centered design and agile mindsets and methods to improve the customer experience of the federal government.
 
 {% include features-work.html %}
 
