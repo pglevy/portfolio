@@ -11,10 +11,28 @@
     <title>Philip's Portfolio</title>
   </head>
   <body>
-    <div class="container">
       {% include nav.html %}
+
+      {% assign this_section = site.sections | where: "title", "Hero" %}
+        {% for section in this_section %}
+          {{ section }}
+        {% endfor %}
+
       {{ content }}
-    </div>
+
+      {% assign this_section = site.sections | where: "title", "About" %}
+        {% for section in this_section %}
+          {{ section }}
+        {% endfor %}
+
+      {% assign this_section = site.sections | where: "title", "Links" %}
+        {% for section in this_section %}
+          {{ section }}
+        {% endfor %}
+
+    <!-- 
+    <span>Photo by <a href="https://unsplash.com/@qa9de?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mark Asthoff</a> on <a href="https://unsplash.com/s/photos/blue-sky?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
