@@ -1,9 +1,9 @@
 ---
-title: Links
-layout: links
+title: Connections
+layout: connections
 ---
 
-## Links & Downloads
+## Connections
 
 Here are best places online to learn more about me and my work:
 * [LinkedIn](https://www.linkedin.com/in/philipglevy/)
