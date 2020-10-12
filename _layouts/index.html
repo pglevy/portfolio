@@ -4,11 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hi! I’m Philip. Welcome to my portfolio.">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Philip's Portfolio</title>
+    <title>{{ site.name }}</title>
   </head>
   <body>
       {% include nav.html %}
@@ -18,7 +19,15 @@
           {{ section }}
         {% endfor %}
 
-      {{ content }}
+      {% assign this_section = site.sections | where: "title", "At Work" %}
+        {% for section in this_section %}
+          {{ section }}
+        {% endfor %}
+
+      {% assign this_section = site.sections | where: "title", "At Home" %}
+        {% for section in this_section %}
+          {{ section }}
+        {% endfor %}
 
       {% assign this_section = site.sections | where: "title", "About" %}
         {% for section in this_section %}
