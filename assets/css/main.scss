@@ -29,7 +29,7 @@ $primary:    #004BA0;
 $secondary:    #FFC107;
 
 // Create variations because Bootstrap doesn't handle this well yet.
-// $primary-light: ;
+$primary-light: #1976D2;
 // $primary-dark: ;
 // $secondary-light: ;
 // $secondary-dark: ;
@@ -103,6 +103,10 @@ $border-width:                2px;
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+.bg-primary-light {
+  background-color: $primary-light;
+}
 
 .bg-primary-lightest {
   background-color: $primary-background;
