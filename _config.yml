@@ -2,7 +2,7 @@ sass:
     sass_dir: assets/bootstrap/scss
 
 url: https://philiplevy.design
-baseurl: /portfolio
+# baseurl: /portfolio
 
 collections:
   - features
