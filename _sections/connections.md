@@ -5,7 +5,7 @@ layout: connections
 
 ## Connections
 
-Here are best places online to learn more about me and my work:
+Here are the best places online to learn more about me and my work:
 
 * [Twitter](https://twitter.com/pglevy)
 * [GitHub](https://github.com/pglevy)
