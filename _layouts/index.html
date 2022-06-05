@@ -34,11 +34,6 @@
           {{ section }}
         {% endfor %}
 
-      {% assign this_section = site.sections | where: "title", "At Home" %}
-        {% for section in this_section %}
-          {{ section }}
-        {% endfor %}
-
       {% assign this_section = site.sections | where: "title", "About" %}
         {% for section in this_section %}
           {{ section }}
