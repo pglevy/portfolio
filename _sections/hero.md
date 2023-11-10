@@ -3,8 +3,8 @@ title: Hero
 layout: hero
 ---
 
-# Hi! I’m Philip. Welcome to my portfolio.
-{: .text-white}
+# Hi! I’m Philip. This is my portfolio.
+{: .text-white .h1-letter-spacing}
 
-My passion is the practice of design, for everything from processes to products. I love engaging with people to dream up and make things that create mutual value.
+I currently refer to myself as a **human-centered technology designer**. I believe in the power of design thinking and doing as a positive force for healthy growth and continuous improvement.
 {: .text-white .lead}

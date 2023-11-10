@@ -3,3 +3,16 @@
     aspect-ratio: 16 / 9;
     object-position: top;
 }
+
+.bg-hero h1 {
+    letter-spacing: .15rem;
+}
+
+.bg-hero .lead {
+    letter-spacing: .05rem;
+}
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
