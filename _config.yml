@@ -1,8 +1,8 @@
 sass:
     sass_dir: assets/bootstrap/scss
 
-url: https://pglevy.com
-# baseurl: /portfolio
+# url: https://pglevy.com
+baseurl: /portfolio
 
 collections:
   - features
