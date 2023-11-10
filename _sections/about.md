@@ -11,7 +11,7 @@ I started my educational journey in music production and engineering and wound m
 Currently, I'm a Lead UX Designer at [Appian](https://appian.com/), a leader in low-code development and process automation, focusing on improving the low-code developer experience and lowering the barriers to process mining.
 {: .col-md-8 .pl-0}
 
-I think it's important for designers to learn about the history of our practice, so I started a podcast called [Designer Sketches](https://designersketches.substack.com/) to profile the lives and work of influential designer of the past century.
+I think it's important for designers to learn about the history of our practice, so I started a podcast called [Designer Sketches](https://designersketches.substack.com/) to profile the lives and work of influential designers of the past century.
 {: .col-md-8 .pl-0}
 
 Aside from design, these are some other topics I’m interested in:
