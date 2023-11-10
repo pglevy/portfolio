@@ -15,3 +15,4 @@ Here are the best places online to learn more about me and my work:
 * [Link In Bio](https://pglevy.github.io/linkinbio/)
 
 Have questions or comments? [Contribute to this page on Github!](https://github.com/pglevy/portfolio) Or you can just email me: [philip.levy@hey.com](mailto:philip.levy@hey.com). 👋
+{: .col-md-8 .pl-0}
