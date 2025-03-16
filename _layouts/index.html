@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -46,7 +46,12 @@
           {{ section }}
         {% endfor %}
 
-      {% assign this_section = site.sections | where: "title", "At Work" %}
+      {% assign this_section = site.sections | where: "title", "Work" %}
+        {% for section in this_section %}
+          {{ section }}
+        {% endfor %}
+
+      {% assign this_section = site.sections | where: "title", "Side Projects" %}
         {% for section in this_section %}
           {{ section }}
         {% endfor %}

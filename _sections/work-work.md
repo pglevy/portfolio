@@ -1,13 +1,11 @@
 ---
-title: At Work
+title: Work
 layout: work
 bg-color: secondary
 ---
 
 ## Work
-Here are some examples of my recent work.
+These are some professional projects I've contributed to over the years, with a focus on large-scale, complex, enterprise products.
 {: .lead}
 
 {% include features-work.html %}
-
-For more interesting projects, see my [GitHub profile](https://github.com/pglevy).
