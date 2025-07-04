@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Levy - Agent-Centered Design, Vibe-Centered Development</title>
+    <meta name="description" content="Philip Levy - Designer and developer focused on agent-centered design and vibe-centered development.">
+    
+    <!-- Pico CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css">
+    
+    <!-- Atkinson Hyperlegible Next Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <style>
+        :root {
+            --pico-font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+            --pico-font-weight: 400;
+            --pico-font-size: 1.125rem;
+            --pico-line-height: 1.6;
+        }
+        
+        body {
+            font-family: var(--pico-font-family);
+            font-weight: var(--pico-font-weight);
+            font-size: var(--pico-font-size);
+            line-height: var(--pico-line-height);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        
+        .hero h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            background-color: var(--pico-primary-background);
+            color: var(--pico-primary-inverse);
+        }
+        
+        .section {
+            margin-bottom: 4rem;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--pico-primary);
+            padding-bottom: 0.5rem;
+        }
+        
+        .project-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .project-card {
+            background: var(--pico-card-background-color);
+            border: 1px solid var(--pico-card-border-color);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 0;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+            border-bottom: 1px solid var(--pico-card-border-color);
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+        
+        .project-card p {
+            margin-bottom: 1rem;
+            color: var(--pico-color);
+        }
+        
+        .project-card a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: var(--pico-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-links a {
+            color: var(--pico-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid var(--pico-card-border-color);
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="avatar.webp" alt="Philip Levy" />
+            <h1>Philip Levy</h1>
+            <p>Agent-centered design, vibe-centered development</p>
+            
+            <nav class="nav-links">
+                <a href="#professional-work">Professional Work</a>
+                <a href="#side-projects">Side Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </section>
+        
+        <!-- Professional Work Section -->
+        <section id="professional-work" class="section">
+            <h2>Professional Work</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="assets/img/process-hq.png" alt="Appian Process HQ interface" class="project-image">
+                    <div class="project-content">
+                        <h3>Appian Process HQ</h3>
+                        <p>Making process mining more accessible to business analysts by simplifying complex data prep and analysis activities with no-code elegance and AI intelligence.</p>
+                        <a href="https://appian.com/products/platform/process-intelligence.html" target="_blank" rel="noopener noreferrer">Learn more →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <img src="assets/img/blackboard-ultra.png" alt="Blackboard Ultra interface" class="project-image">
+                    <div class="project-content">
+                        <h3>Blackboard Ultra</h3>
+                        <p>Contributing product designer to ground-up redesign of the Blackboard learning management system. Heavily based on ethnographic research with teachers and students.</p>
+                        <a href="https://www.anthology.com/blackboard-ultra" target="_blank" rel="noopener noreferrer">Learn more →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <img src="assets/img/uswds-breadcrumb.png" alt="USWDS Breadcrumb component" class="project-image">
+                    <div class="project-content">
+                        <h3>U.S. Web Design System</h3>
+                        <p>Supported a government contract working with the USWDS team, including working directly on the Breadcrumb component.</p>
+                        <a href="https://designsystem.digital.gov/components/breadcrumb/" target="_blank" rel="noopener noreferrer">View component →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <img src="assets/img/starfish.png" alt="Starfish retention system interface" class="project-image">
+                    <div class="project-content">
+                        <h3>Starfish</h3>
+                        <p>Lead designer on effort to modernize college student retention system, informed by direct, on-campus research with students and advisors and enabled by a new tech stack using React and Material UI.</p>
+                        <a href="https://eab.com/solutions/starfish/" target="_blank" rel="noopener noreferrer">Learn more →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Side Projects Section -->
+        <section id="side-projects" class="section">
+            <h2>Side Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="assets/img/gifthorse.png" alt="GiftHorse app interface" class="project-image">
+                    <div class="project-content">
+                        <h3>GiftHorse</h3>
+                        <p>A gift-sharing app for families and friends, vibe-coded with the Replit AI Agent. Made for family use during the 2024 holiday to get gifting plans out of emails.</p>
+                        <a href="https://github.com/pglevy/gifthorse-agent?tab=readme-ov-file#readme" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <img src="assets/img/pod-force.png" alt="Pod Force podcast player interface" class="project-image">
+                    <div class="project-content">
+                        <h3>Pod Force</h3>
+                        <p>A podcast player web app template anyone can use to subscribe and listen to their favorite podcasts. Simply copy the template, add your subs, and publish!</p>
+                        <a href="https://github.com/lowcodelounge/pod-force?tab=readme-ov-file#readme" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <img src="assets/img/typeset-css.png" alt="Typeset.css typography examples" class="project-image">
+                    <div class="project-content">
+                        <h3>Typeset.css</h3>
+                        <p>A drop-in, zero-config relational style sheet for better web typography based on the principles outlined in "Flexible Typography" by Tim Brown.</p>
+                        <a href="https://pglevy.github.io/typeset.css/" target="_blank" rel="noopener noreferrer">View demo →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <img src="assets/img/unsuck-type.png" alt="Unsuck Your Typography guide" class="project-image">
+                    <div class="project-content">
+                        <h3>Unsuck Your Typography</h3>
+                        <p>A straightforward guide to better typography anyone can use — special design skills or tools not required.</p>
+                        <a href="https://pglevy.github.io/unsuck-your-typography/" target="_blank" rel="noopener noreferrer">Read guide →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <img src="assets/img/lowcodelounge.github.io_plain-vanilla-gh-pages_(iPad Mini).jpg" alt="Plain Vanilla GitHub Pages template" class="project-image">
+                    <div class="project-content">
+                        <h3>Plain Vanilla GitHub Pages</h3>
+                        <p>The easiest way for low-tech people to create and host basic web pages for free on GitHub Pages. Just copy the template, turn on publishing, and add your Markdown content.</p>
+                        <a href="https://lowcodelounge.github.io/plain-vanilla-gh-pages/" target="_blank" rel="noopener noreferrer">View template →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <img src="assets/img/bixal.github.io_uswds-screener-prototyping-tool_question-2.html(iPad Pro) (1).jpg" alt="USWDS Screener Prototyping Tool interface" class="project-image">
+                    <div class="project-content">
+                        <h3>USWDS Screener Prototyping Tool</h3>
+                        <p>A customizable form for prototyping a screener experience using the U.S. Web Design System and GitHub Pages. The template can be copied and modified without any installs or local builds.</p>
+                        <a href="https://github.com/lowcodelounge/uswds-screener-prototyping-tool#readme" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:philip.levy@gmail.com">Email</a>
+                <a href="https://github.com/pglevy" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/pglevy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com/pglevy" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Philip Levy. Hand-crafted with semantic HTML and Pico CSS.</p>
+    </footer>
+</body>
+</html>
