@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philip Levy - Agent-Centered Design, Vibe-Centered Development</title>
-    <meta name="description" content="Philip Levy - Designer and developer focused on agent-centered design and vibe-centered development.">
+    <title>Philip Levy - AI Design Technologist</title>
+    <meta name="description" content="Philip Levy - Focusing on agent-centered design and vibe-centered development.">
     
     <!-- Pico CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css">
@@ -37,7 +37,7 @@
         
         .hero {
             text-align: center;
-            padding: 3rem 0;
+            padding: 2.5rem 0;
         }
         
         .hero img {
@@ -62,7 +62,15 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
         }
         
         .nav-links a {
@@ -83,8 +91,9 @@
         
         .section h2 {
             font-size: 2rem;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid var(--pico-primary);
+            margin-bottom: 1rem;
+            padding-top: 0.5rem;
+            border-top: 2px solid var(--pico-primary-underline);
             padding-bottom: 0.5rem;
         }
         
@@ -107,11 +116,15 @@
             overflow: hidden;
             transition: transform 0.2s, box-shadow 0.2s;
             padding: 0;
+            display: flex;
+            flex-direction: column;
         }
         
-        .project-card:hover {
+        .project-card:has(a:hover),
+        .project-card:has(a:focus) {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--pico-card-border-color);
+            box-shadow: 0 4px 12px rgba(32, 96, 223, 0.1);
         }
         
         .project-image {
@@ -125,6 +138,9 @@
         
         .project-content {
             padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
         }
         
         .project-card h3 {
@@ -139,7 +155,7 @@
         
         .project-card a {
             display: inline-block;
-            margin-top: 0.5rem;
+            margin-top: auto;
             color: var(--pico-primary);
             text-decoration: none;
             font-weight: 600;
@@ -155,6 +171,14 @@
             gap: 2rem;
             margin-top: 2rem;
         }
+
+        @media (max-width: 768px) {
+            .contact-links {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
         
         .contact-links a {
             color: var(--pico-primary);
@@ -168,7 +192,7 @@
         
         footer {
             text-align: center;
-            padding: 2rem 0;
+            padding: 2rem 1rem;
             margin-top: 4rem;
             border-top: 1px solid var(--pico-card-border-color);
         }
@@ -179,19 +203,59 @@
         <!-- Hero Section -->
         <section class="hero">
             <img src="avatar.webp" alt="Philip Levy" />
-            <h1>Philip Levy</h1>
-            <p>Agent-centered design, vibe-centered development</p>
-            
+            <hgroup>
+                <h1>Philip Levy</h1>
+                <p>AI Design Technologist</p>
+            </hgroup>
             <nav class="nav-links">
-                <a href="#professional-work">Professional Work</a>
-                <a href="#side-projects">Side Projects</a>
+                <a href="#ai-projects">AI Projects</a>
+                <a href="#day-job">Day Job</a>
+                <a href="#other-stuff">Other Stuff</a>
                 <a href="#contact">Contact</a>
             </nav>
         </section>
         
-        <!-- Professional Work Section -->
-        <section id="professional-work" class="section">
-            <h2>Professional Work</h2>
+        <!-- AI Projects Section -->
+        <section id="ai-projects" class="section">
+            <h2>AI Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Vibe Coding Boilerplate</h3>
+                        <p>A lightweight GitHub template to help designers organize and share Typescript-based, LLM-generated prototypes.</p>
+                        <a href="https://github.com/pglevy/vibe-coding-boilerplate" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Appian Design System MCP Server</h3>
+                        <p>An MCP server that provides agent access to designer-curated guidance and code samples for producing aesthetic and functional interfaces with SAIL.</p>
+                        <a href="https://github.com/pglevy/design-system-server" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>SAILable: Intelligent accessibility reviewer</h3>
+                        <p>A Firefox Add-On that validates accessibility rules for Appian SAIL code directly in Interface Designer.</p>
+                        <a href="https://github.com/pglevy/sailable" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>EmailImprov</h3>
+                        <p>An email simulation system designed for testing AI agents and agentic workflows. Generate dynamic, contextual email interactions using distinct personas powered by local LLMs using Ollama.</p>
+                        <a href="https://github.com/pglevy/emailimprov" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Day Job Section -->
+        <section id="day-job" class="section">
+            <h2>Day Job</h2>
             <div class="project-grid">
                 <article class="project-card">
                     <img src="assets/img/process-hq.png" alt="Appian Process HQ interface" class="project-image">
@@ -231,9 +295,9 @@
             </div>
         </section>
         
-        <!-- Side Projects Section -->
-        <section id="side-projects" class="section">
-            <h2>Side Projects</h2>
+        <!-- Other Stuff Section -->
+        <section id="other-stuff" class="section">
+            <h2>Other Stuff</h2>
             <div class="project-grid">
                 <article class="project-card">
                     <img src="assets/img/gifthorse.png" alt="GiftHorse app interface" class="project-image">
@@ -295,10 +359,10 @@
         <section id="contact" class="section">
             <h2>Contact</h2>
             <div class="contact-links">
-                <a href="mailto:philip.levy@gmail.com">Email</a>
+                <a href="mailto:philip.levy@hey.com">Email</a>
                 <a href="https://github.com/pglevy" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com/in/pglevy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://twitter.com/pglevy" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://linkedin.com/in/philipglevy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://substack.com/@designersketches" target="_blank" rel="noopener noreferrer">Substack</a>
             </div>
         </section>
     </main>
